@@ -10,7 +10,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppMain from "./pages/AppMain.vue";
-
+// some
 export default {
   components: {
     AppHeader,
