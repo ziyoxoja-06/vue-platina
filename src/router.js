@@ -9,7 +9,6 @@ const router = createRouter({
         { path: '/', component: AppMain },
         { path: '/news-page', component: SinglePage },
     ],
-    base: 'home',
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
             return savedPosition
