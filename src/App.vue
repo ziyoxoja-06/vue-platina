@@ -1,7 +1,7 @@
 <template>
   <app-header></app-header>
   <div class="container">
-    <router-view></router-view>
+    <app-main></app-main>
   </div>
   <app-footer></app-footer>
 </template>
@@ -9,11 +9,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppMain from "./pages/AppMain.vue";
 
 export default {
   components: {
     AppHeader,
     AppFooter,
+    AppMain,
   },
 };
 </script>
