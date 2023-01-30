@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// import AppMain from "./pages/AppMain.vue"
+import AppMain from "./pages/AppMain.vue"
 import SinglePage from "./pages/SinglePage.vue"
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/', component: () => import('./pages/AppMain.vue') },
+        { path: '/', component: AppMain },
         { path: '/news-page', component: SinglePage },
     ],
+    base: '/home',
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
             return savedPosition
